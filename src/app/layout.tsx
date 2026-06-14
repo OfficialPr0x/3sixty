@@ -16,6 +16,13 @@ const serif = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "3Sixty North | Premium Property Care",
   description: "Sudbury's elite residential and commercial property care specialists. Snow plowing, lawn maintenance, and landscape design.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "500x500" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png", sizes: "500x500" }],
+  },
 };
 
 export default function RootLayout({
