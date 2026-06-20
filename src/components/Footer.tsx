@@ -22,9 +22,10 @@ export default function Footer() {
               />
             </Link>
             <p className="text-stone-500 text-sm leading-relaxed mb-8 font-light">
-              Proudly 100% Indigenous-owned. Providing dependable lawn care,
-              landscaping, and snow plowing for residential, commercial, industrial,
-              and municipal clients across Northern Ontario since 2024.
+              Sudbury's #1 100% Indigenous-owned lawn care and property maintenance
+              company. Dependable lawn care, landscaping, and snow plowing for
+              residential, commercial, industrial, and municipal clients across
+              Sudbury and Northern Ontario since 2024.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors">
@@ -70,6 +71,11 @@ export default function Footer() {
           <div>
             <h4 className="text-logo-green font-bold text-xs uppercase tracking-[0.3em] mb-10">Company</h4>
             <ul className="space-y-4">
+              <li>
+                <Link href="#work" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
+                  Before &amp; After
+                </Link>
+              </li>
               <li>
                 <Link href="#why-us" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
                   Why Choose Us

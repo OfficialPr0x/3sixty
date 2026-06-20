@@ -31,7 +31,7 @@ export default function Hero() {
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-primary text-xs font-bold tracking-[0.2em] uppercase">
               <Star className="w-3.5 h-3.5 fill-primary" />
-              Proudly 100% Indigenous-Owned
+              Sudbury's #1 Indigenous-Owned Property Care
             </span>
           </motion.div>
 
@@ -41,8 +41,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl md:text-8xl font-serif text-stone-900 mb-10 leading-[1.1] tracking-tight"
           >
-            Reliable Property Care <br />
-            <span className="text-primary italic">In Every Season.</span>
+            Sudbury's Best In <br />
+            <span className="text-primary italic">Lawn & Property Care.</span>
           </motion.h1>
 
           <motion.p
@@ -51,8 +51,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
           >
-            Dependable lawn care, landscaping, and snow plowing for residential,
-            commercial, industrial, and municipal clients across Northern Ontario.
+            Proudly 100% Indigenous-owned. Dependable lawn care, landscaping, and
+            snow plowing for residential, commercial, industrial, and municipal
+            clients across Sudbury and Northern Ontario.
           </motion.p>
 
           <motion.div
@@ -82,7 +83,7 @@ export default function Hero() {
             </div>
             <div className="flex items-center gap-3 border-r border-stone-200 pr-10 last:border-0 last:pr-0">
               <ShieldCheck className="w-5 h-5 text-accent" />
-              Northern Ontario
+              Sudbury Based
             </div>
             <div className="flex items-center gap-3 border-r border-stone-200 pr-10 last:border-0 last:pr-0">
               <ShieldCheck className="w-5 h-5 text-accent" />

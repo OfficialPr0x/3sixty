@@ -14,9 +14,10 @@ const serif = DM_Serif_Display({
 });
 
 const siteUrl = "https://3sixtynorthlawncareandlandscaping.com";
-const siteTitle = "3Sixty North Lawn Care & Landscaping | Northern Ontario";
+const siteTitle =
+  "3Sixty North | Sudbury's #1 Indigenous-Owned Lawn Care & Property Maintenance";
 const siteDescription =
-  "Proudly 100% Indigenous-owned. Dependable lawn care, landscaping, and snow plowing for residential, commercial, industrial, and municipal clients across Northern Ontario.";
+  "Sudbury's premier 100% Indigenous-owned lawn care, landscaping, and snow plowing company. Trusted, reliable property maintenance for residential, commercial, industrial, and municipal clients across Sudbury and Northern Ontario.";
 const ogImage =
   "https://res.cloudinary.com/dkc1pmbma/image/upload/q_auto/f_auto/v1781417481/ChatGPT_Image_Jun_13_2026_11_58_09_PM_ggrmwr.png";
 
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1672,
         height: 941,
-        alt: "3Sixty North Lawn Care & Landscaping — Reliable property care in every season across Northern Ontario.",
+        alt: "3Sixty North — Sudbury's #1 Indigenous-owned lawn care and property maintenance company. Reliable service in every season.",
       },
     ],
   },
