@@ -18,7 +18,7 @@ export default function Footer() {
               <img 
                 src="https://res.cloudinary.com/doajstql7/image/upload/v1778953853/ChatGPT_Image_May_15_2026_09_27_33_PM_iyeu8w.png" 
                 alt="3Sixty North Logo" 
-                className="h-16 w-auto object-contain"
+                className="h-20 w-auto object-contain"
               />
             </Link>
             <p className="text-stone-500 text-sm leading-relaxed mb-8 font-light">

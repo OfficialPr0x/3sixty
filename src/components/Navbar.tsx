@@ -37,7 +37,7 @@ export default function Navbar() {
             <img 
               src="https://res.cloudinary.com/doajstql7/image/upload/v1778953853/ChatGPT_Image_May_15_2026_09_27_33_PM_iyeu8w.png" 
               alt="3Sixty North Logo" 
-              className={`transition-all duration-300 ${scrolled ? "h-10 sm:h-12" : "h-12 sm:h-14"} w-auto object-contain`}
+              className={`transition-all duration-300 ${scrolled ? "h-14 sm:h-16" : "h-16 sm:h-20"} w-auto object-contain`}
             />
           </Link>
 
