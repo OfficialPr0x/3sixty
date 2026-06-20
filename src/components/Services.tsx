@@ -1,42 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Snowflake,
-  Leaf,
-  Sprout,
-  Sun,
-  Wind,
-  Plus,
-} from "lucide-react";
+import { Snowflake, Leaf, Trees, Plus } from "lucide-react";
 
 const services = [
   {
-    id: "snow",
-    title: "Elite Winter Management",
-    subtitle: "Precision Plowing & Safety",
-    icon: <Snowflake className="w-6 h-6" />,
-    description:
-      "When the storm hits, our precision fleet is already in motion. We provide surgical snow removal and meticulous de-icing for properties that cannot afford downtime or safety risks.",
-    features: ["Priority Storm Response", "Walkway Finishing", "Snow Relocation", "Site Monitoring"],
-  },
-  {
     id: "lawn",
-    title: "Estate Maintenance",
-    subtitle: "Golf-Course Standards",
+    title: "Lawn Care & Property Maintenance",
+    subtitle: "Keeping Properties Pristine",
     icon: <Leaf className="w-6 h-6" />,
     description:
-      "More than just a cut. We manage the health, vitality, and aesthetic perfection of your lawn with deep fertilization programs and laser-straight edging.",
-    features: ["Precision Mowing", "Soil Health Analysis", "Seasonal Feeding", "Edge Detailing"],
+      "A well-maintained property creates a lasting first impression. Our team keeps your grounds looking their best throughout the season.",
+    features: [
+      "Lawn Cutting & Maintenance",
+      "Spring Cleanups",
+      "Fall Cleanups",
+      "Brush Clearing & Vegetation Control",
+      "Property Maintenance Programs",
+      "Commercial Grounds Maintenance",
+      "Residential Property Maintenance",
+    ],
   },
   {
-    id: "sod",
-    title: "Instant Transformation",
-    subtitle: "Premium Sod Installation",
-    icon: <Sprout className="w-6 h-6" />,
+    id: "landscaping",
+    title: "Landscaping Services",
+    subtitle: "Enhancing Your Outdoor Space",
+    icon: <Trees className="w-6 h-6" />,
     description:
-      "Replace years of neglect with an instant masterpiece. We source the highest grade turf and prepare the foundation with horticultural precision for long-term health.",
-    features: ["Foundation Grading", "Premium Kentucky Blue", "Irrigation Tuning", "Post-Care Guide"],
+      "Whether you're improving curb appeal or upgrading your outdoor space, our landscaping services transform and enhance your property.",
+    features: [
+      "Landscape Design Support",
+      "Landscape Enhancements",
+      "Garden Bed Maintenance",
+      "Shrub & Hedge Maintenance",
+      "Property Improvements",
+    ],
+  },
+  {
+    id: "snow",
+    title: "Snow Plowing Services",
+    subtitle: "Dependable Winter Service",
+    icon: <Snowflake className="w-6 h-6" />,
+    description:
+      "Northern Ontario winters demand dependable service. We keep properties accessible, safe, and operational during snow events.",
+    features: [
+      "Commercial Parking Lot Plowing",
+      "Residential Driveway Plowing",
+      "Private Road Plowing",
+      "Seasonal Snow Plowing Contracts",
+      "Winter Property Maintenance",
+    ],
   },
 ];
 
@@ -47,16 +60,17 @@ export default function Services() {
         <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
             <h2 className="text-sm font-bold tracking-[0.3em] text-accent uppercase mb-6">
-              Our Expertise
+              Our Services
             </h2>
             <h3 className="text-4xl md:text-6xl font-serif text-stone-900 leading-tight">
-              A Masterclass In <br />
-              <span className="text-primary italic">Property Stewardship.</span>
+              Complete Property Care, <br />
+              <span className="text-primary italic">Every Season.</span>
             </h3>
           </div>
           <p className="text-stone-500 text-lg max-w-sm mb-2 font-light">
-            We don't just maintain; we elevate. Every service is a commitment to 
-            long-term property value and immediate aesthetic impact.
+            From routine lawn maintenance and landscaping projects to winter snow
+            plowing, we keep your property safe, clean, and professionally
+            maintained year-round.
           </p>
         </div>
 
@@ -76,7 +90,7 @@ export default function Services() {
                 </div>
                 <span className="text-stone-300 font-serif text-4xl">0{index + 1}</span>
               </div>
-              
+
               <div className="mb-10">
                 <h4 className="text-2xl font-serif text-stone-900 mb-2">
                   {service.title}
@@ -92,54 +106,13 @@ export default function Services() {
               <ul className="space-y-4">
                 {service.features.map((feature, i) => (
                   <li key={i} className="flex items-center gap-3 text-sm text-stone-600 font-medium">
-                    <Plus className="w-3 h-3 text-primary" />
+                    <Plus className="w-3 h-3 text-primary shrink-0" />
                     {feature}
                   </li>
                 ))}
               </ul>
             </motion.div>
           ))}
-        </div>
-
-        {/* Seasonal Accent Sections */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-stone-900 rounded-[2rem] p-12 text-white relative overflow-hidden group"
-          >
-            <div className="relative z-10">
-              <Sun className="w-10 h-10 text-accent mb-6" />
-              <h4 className="text-3xl font-serif mb-4">Spring Revival</h4>
-              <p className="text-stone-400 font-light mb-8 max-w-sm">
-                The critical window for property health. Dethatching, garden prep, and debris removal.
-              </p>
-              <button className="text-accent text-sm font-bold uppercase tracking-widest border-b border-accent/30 pb-1 group-hover:border-accent transition-all">
-                Learn More
-              </button>
-            </div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 blur-[80px] rounded-full -mr-20 -mt-20 group-hover:bg-accent/10 transition-all duration-700" />
-          </motion.div>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-primary rounded-[2rem] p-12 text-white relative overflow-hidden group"
-          >
-            <div className="relative z-10">
-              <Wind className="w-10 h-10 text-white/50 mb-6" />
-              <h4 className="text-3xl font-serif mb-4">Autumn Fortification</h4>
-              <p className="text-white/70 font-light mb-8 max-w-sm">
-                Preparing the landscape for its winter rest. Deep leaf removal and garden bed protection.
-              </p>
-              <button className="text-white text-sm font-bold uppercase tracking-widest border-b border-white/30 pb-1 group-hover:border-white transition-all">
-                Learn More
-              </button>
-            </div>
-            <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 blur-[80px] rounded-full -mr-20 -mt-20 group-hover:bg-white/10 transition-all duration-700" />
-          </motion.div>
         </div>
       </div>
     </section>

@@ -29,13 +29,9 @@ export default function Hero() {
             transition={{ duration: 0.8 }}
             className="flex items-center justify-center gap-2 mb-8"
           >
-            <div className="flex gap-0.5">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-4 h-4 text-accent fill-accent" />
-              ))}
-            </div>
-            <span className="text-stone-500 text-sm font-medium tracking-[0.2em] uppercase">
-              Sudbury's Premier Property Specialists
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-primary text-xs font-bold tracking-[0.2em] uppercase">
+              <Star className="w-3.5 h-3.5 fill-primary" />
+              Proudly 100% Indigenous-Owned
             </span>
           </motion.div>
 
@@ -45,8 +41,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl md:text-8xl font-serif text-stone-900 mb-10 leading-[1.1] tracking-tight"
           >
-            Artistry In <br />
-            <span className="text-primary italic">Every Season.</span>
+            Reliable Property Care <br />
+            <span className="text-primary italic">In Every Season.</span>
           </motion.h1>
 
           <motion.p
@@ -55,8 +51,8 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-stone-600 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
           >
-            From silent winter snowfalls to the lush green of midsummer, we provide 
-            curated property care for Sudbury's most distinguished addresses.
+            Dependable lawn care, landscaping, and snow plowing for residential,
+            commercial, industrial, and municipal clients across Northern Ontario.
           </motion.p>
 
           <motion.div
@@ -69,7 +65,7 @@ export default function Hero() {
               href="#contact"
               className="group flex items-center gap-3 px-10 py-5 rounded-full bg-primary hover:bg-primary-dark text-white font-bold text-lg transition-all shadow-xl shadow-primary/20 hover:shadow-2xl hover:shadow-primary/30"
             >
-              Request A Private Consultation
+              Request A Free Quote
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
@@ -82,15 +78,15 @@ export default function Hero() {
           >
             <div className="flex items-center gap-3 border-r border-stone-200 pr-10 last:border-0 last:pr-0">
               <ShieldCheck className="w-5 h-5 text-accent" />
-              Fully Insured
+              Established 2024
             </div>
             <div className="flex items-center gap-3 border-r border-stone-200 pr-10 last:border-0 last:pr-0">
               <ShieldCheck className="w-5 h-5 text-accent" />
-              Established 2012
+              Northern Ontario
             </div>
             <div className="flex items-center gap-3 border-r border-stone-200 pr-10 last:border-0 last:pr-0">
               <ShieldCheck className="w-5 h-5 text-accent" />
-              Elite Standards
+              Year-Round Service
             </div>
           </motion.div>
         </div>

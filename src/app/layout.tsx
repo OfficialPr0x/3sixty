@@ -13,10 +13,10 @@ const serif = DM_Serif_Display({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://3sixtynorth.com";
-const siteTitle = "3Sixty North | Premium Property Care";
+const siteUrl = "https://3sixtynorthlawncareandlandscaping.com";
+const siteTitle = "3Sixty North Lawn Care & Landscaping | Northern Ontario";
 const siteDescription =
-  "Sudbury's elite residential and commercial property care specialists. Snow plowing, lawn maintenance, and landscape design.";
+  "Proudly 100% Indigenous-owned. Dependable lawn care, landscaping, and snow plowing for residential, commercial, industrial, and municipal clients across Northern Ontario.";
 const ogImage =
   "https://res.cloudinary.com/dkc1pmbma/image/upload/q_auto/f_auto/v1781417481/ChatGPT_Image_Jun_13_2026_11_58_09_PM_ggrmwr.png";
 
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: ogImage,
         width: 1672,
         height: 941,
-        alt: "3Sixty North — Artistry in Every Season. Premium property care for Sudbury's most distinguished addresses.",
+        alt: "3Sixty North Lawn Care & Landscaping — Reliable property care in every season across Northern Ontario.",
       },
     ],
   },

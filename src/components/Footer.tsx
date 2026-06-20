@@ -1,6 +1,6 @@
 "use client";
 
-import { Leaf, Phone, Mail, MapPin, Globe, MessageCircle, Users } from "lucide-react";
+import { Phone, Mail, MapPin, Globe, MessageCircle, Users } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {
@@ -22,8 +22,9 @@ export default function Footer() {
               />
             </Link>
             <p className="text-stone-500 text-sm leading-relaxed mb-8 font-light">
-              Providing elite property stewardship for Sudbury's most distinguished residential 
-              and commercial addresses since 2012. Artistry in every season.
+              Proudly 100% Indigenous-owned. Providing dependable lawn care,
+              landscaping, and snow plowing for residential, commercial, industrial,
+              and municipal clients across Northern Ontario since 2024.
             </p>
             <div className="flex gap-4">
               <Link href="#" className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary transition-colors">
@@ -40,26 +41,26 @@ export default function Footer() {
 
           {/* Curated Services */}
           <div>
-            <h4 className="text-logo-green font-bold text-xs uppercase tracking-[0.3em] mb-10">Exclusive Services</h4>
+            <h4 className="text-logo-green font-bold text-xs uppercase tracking-[0.3em] mb-10">Services</h4>
             <ul className="space-y-4">
               <li>
                 <Link href="#services" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Elite Winter Management
+                  Lawn Care & Maintenance
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Estate Lawn Maintenance
+                  Landscaping Services
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Premium Sod Installation
+                  Snow Plowing Services
                 </Link>
               </li>
               <li>
                 <Link href="#services" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Seasonal Property Revival
+                  Commercial Grounds Maintenance
                 </Link>
               </li>
             </ul>
@@ -71,17 +72,17 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link href="#why-us" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Our Standard
+                  Why Choose Us
                 </Link>
               </li>
               <li>
-                <Link href="#testimonials" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Success Stories
+                <Link href="#commitment" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
+                  Our Commitment
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-stone-500 hover:text-logo-green transition-colors text-sm font-light">
-                  Private Consultation
+                  Request A Free Quote
                 </Link>
               </li>
             </ul>
@@ -106,8 +107,8 @@ export default function Footer() {
                 <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
                   <Mail className="w-4 h-4 text-primary" />
                 </div>
-                <a href="mailto:support@3sixtynorth.com" className="text-stone-400 hover:text-logo-green transition-colors text-sm font-light pt-1">
-                  support@3sixtynorth.com
+                <a href="mailto:support@3sixtynorthlawncareandlandscaping.com" className="text-stone-400 hover:text-logo-green transition-colors text-sm font-light pt-1 break-all">
+                  support@3sixtynorthlawncareandlandscaping.com
                 </a>
               </li>
               <li className="flex items-start gap-4">
@@ -115,8 +116,8 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary" />
                 </div>
                 <div className="text-stone-400 text-sm font-light pt-1">
-                  Sudbury & Surrounding Area<br/>
-                  <span className="text-stone-600 text-xs">Residential & Commercial</span>
+                  Northern Ontario<br/>
+                  <span className="text-stone-600 text-xs">Residential, Commercial, Industrial & Municipal</span>
                 </div>
               </li>
             </ul>
@@ -125,7 +126,7 @@ export default function Footer() {
 
         <div className="border-t border-white/5 pt-12 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-stone-600 text-[11px] uppercase tracking-widest">
-            &copy; {new Date().getFullYear()} 3SIXTY NORTH Property Care Specialists Inc.
+            &copy; {new Date().getFullYear()} 3Sixty North Lawn Care & Landscaping &middot; Proudly Indigenous-Owned
           </p>
           <div className="flex gap-8 text-[11px] uppercase tracking-widest text-stone-600">
             <Link href="#" className="hover:text-logo-green transition-colors">Privacy</Link>

@@ -15,8 +15,8 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Consultation requested", formData);
-    alert("Your consultation request has been received. Our team will contact you shortly.");
+    console.log("Quote requested", formData);
+    alert("Thanks! Your free quote request has been received. Our team will contact you shortly.");
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -35,15 +35,15 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-sm font-bold tracking-[0.3em] text-accent uppercase mb-6">
-                Consultation
+                Request A Free Quote
               </h2>
               <h3 className="text-4xl md:text-6xl font-serif text-stone-900 mb-8 leading-tight">
-                Begin Your <br />
-                <span className="text-primary italic">Transformation.</span>
+                Let's Get <br />
+                <span className="text-primary italic">Started.</span>
               </h3>
               <p className="text-xl text-stone-500 mb-12 leading-relaxed font-light">
-                Our schedule fills quickly with preferred clients. Reserve your 
-                consultation today to secure elite care for your property.
+                Looking for a reliable property maintenance partner? Contact us today
+                to discuss your project and receive a free, no-obligation quote.
               </p>
               
               <div className="space-y-8 mb-12">
@@ -69,7 +69,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <div className="text-stone-400 text-xs font-bold uppercase tracking-widest mb-1">Inquiries</div>
-                    <div className="text-lg font-serif text-stone-900 break-all">support@3sixtynorth.com</div>
+                    <div className="text-lg font-serif text-stone-900 break-all">support@3sixtynorthlawncareandlandscaping.com</div>
                   </div>
                 </a>
               </div>
@@ -77,10 +77,11 @@ export default function Contact() {
               <div className="bg-stone-50 border border-stone-200 rounded-3xl p-8">
                 <div className="flex items-center gap-4 mb-4">
                   <ShieldCheck className="w-6 h-6 text-primary" />
-                  <span className="text-stone-900 font-bold uppercase text-xs tracking-widest">Client Priority</span>
+                  <span className="text-stone-900 font-bold uppercase text-xs tracking-widest">Free & No-Obligation</span>
                 </div>
                 <p className="text-stone-500 text-sm font-light">
-                  Snow plowing memberships for the 2026/27 season are now 85% committed.
+                  Serving residential, commercial, industrial, and municipal clients
+                  throughout Northern Ontario, in every season.
                 </p>
               </div>
             </motion.div>
@@ -105,7 +106,7 @@ export default function Contact() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full bg-stone-50 border-none rounded-2xl px-6 py-4 text-stone-900 focus:ring-2 focus:ring-primary/20 transition-all placeholder:text-stone-300 font-light"
-                      placeholder="e.g. Sterling Archer"
+                      placeholder="e.g. Jordan Smith"
                     />
                   </div>
                   <div className="space-y-2">
@@ -145,11 +146,11 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full bg-stone-50 border-none rounded-2xl px-6 py-4 text-stone-900 focus:ring-2 focus:ring-primary/20 transition-all appearance-none font-light"
                     >
-                      <option value="" disabled>Select Exclusive Service</option>
-                      <option value="Snow Plowing">Elite Winter Management</option>
-                      <option value="Lawn Care">Estate Lawn Maintenance</option>
-                      <option value="Sod Installation">Premium Sod Transformation</option>
-                      <option value="Cleanup">Seasonal Property Revival</option>
+                      <option value="" disabled>Select A Service</option>
+                      <option value="Lawn Care">Lawn Care & Property Maintenance</option>
+                      <option value="Landscaping">Landscaping Services</option>
+                      <option value="Snow Plowing">Snow Plowing Services</option>
+                      <option value="Other">Other / Not Sure Yet</option>
                     </select>
                     <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-stone-400">
                       <ArrowRight className="w-4 h-4 rotate-90" />
@@ -173,7 +174,7 @@ export default function Contact() {
                   type="submit"
                   className="w-full bg-stone-900 hover:bg-black text-white font-bold text-lg py-5 rounded-2xl transition-all flex items-center justify-center gap-3 shadow-xl hover:shadow-black/20"
                 >
-                  Submit Consultation Request
+                  Request My Free Quote
                   <ArrowRight className="w-5 h-5" />
                 </button>
               </form>

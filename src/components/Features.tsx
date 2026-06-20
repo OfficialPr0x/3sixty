@@ -5,16 +5,20 @@ import { Quote } from "lucide-react";
 
 const principles = [
   {
-    title: "Uncompromising Reliability",
-    description: "Our teams are deployed with military precision. If we say we'll be there, we are there—rain, sleet, or snow.",
+    title: "Reliable Service",
+    description: "Clients depend on us to show up on time and complete the job professionally. Reliability is at the core of everything we do.",
   },
   {
-    title: "Aesthetic Discipline",
-    description: "We don't just cut grass; we curate landscapes. Every edge is checked, every leaf is accounted for.",
+    title: "Quality Workmanship",
+    description: "We take pride in delivering quality results and paying attention to the details that make a difference.",
   },
   {
-    title: "Elite Protection",
-    description: "Fully insured and strictly professional. We treat your property with the reverence it deserves.",
+    title: "Customer-Focused Approach",
+    description: "Every property is different. We work closely with clients to understand their needs and deliver solutions that fit their goals and budget.",
+  },
+  {
+    title: "Proudly Indigenous-Owned",
+    description: "As a 100% Indigenous-owned company, we're proud to contribute to the communities we serve, building lasting relationships through trust and respect.",
   },
 ];
 
@@ -44,10 +48,10 @@ export default function Features() {
               <div className="absolute -bottom-10 -right-10 bg-white p-10 rounded-[2rem] shadow-2xl z-20 max-w-[280px]">
                 <Quote className="w-8 h-8 text-accent mb-6" />
                 <p className="text-stone-900 font-serif text-lg leading-relaxed italic mb-6">
-                  "The difference between a house and an estate is the standard of care."
+                  "Quality workmanship, reliable service, and professional results you can depend on."
                 </p>
                 <div className="text-stone-400 text-xs font-bold uppercase tracking-widest">
-                  The 3Sixty Standard
+                  The 3Sixty North Standard
                 </div>
               </div>
 
@@ -58,11 +62,11 @@ export default function Features() {
 
           <div className="lg:w-1/2">
             <h2 className="text-sm font-bold tracking-[0.3em] text-accent uppercase mb-6">
-              The 3Sixty Standard
+              Why Choose 3Sixty North?
             </h2>
             <h3 className="text-4xl md:text-6xl font-serif text-stone-900 mb-12 leading-tight">
-              We Don't Compete. <br />
-              <span className="text-primary italic">We Define.</span>
+              Built On Trust, <br />
+              <span className="text-primary italic">Respect & Results.</span>
             </h3>
 
             <div className="space-y-12">

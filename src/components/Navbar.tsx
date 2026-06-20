@@ -19,8 +19,8 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Services", href: "#services" },
-    { name: "Process", href: "#why-us" },
-    { name: "Success Stories", href: "#testimonials" },
+    { name: "Why Us", href: "#why-us" },
+    { name: "Our Commitment", href: "#commitment" },
   ];
 
   return (
@@ -67,7 +67,7 @@ export default function Navbar() {
               className="relative overflow-hidden px-7 py-3 rounded-full bg-primary text-white font-bold text-[14px] transition-all shadow-lg shadow-primary/20 hover:shadow-primary/30 hover:-translate-y-0.5 active:scale-95 group"
             >
               <span className="relative z-10 flex items-center gap-2">
-                Reserve Service
+                Free Quote
                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
@@ -118,7 +118,7 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="text-center px-6 py-4 rounded-2xl bg-primary text-white font-bold text-lg"
               >
-                Book Now
+                Request A Free Quote
               </Link>
             </div>
           </motion.div>
